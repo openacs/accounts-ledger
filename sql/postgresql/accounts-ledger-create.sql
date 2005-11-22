@@ -9,7 +9,10 @@ CREATE TABLE qal_makemodel (
 );
 
 -- gets imported into qal_chart
-CREATE TABLE qal_template_columns (
+-- Each account represents two traditional accounting columns:
+-- debit column data is represented by positive values
+-- credit column data is represented as negative values
+CREATE TABLE qal_template_accounts (
     chart_code varchar(30),
     description text,
     charttype varchar(5),

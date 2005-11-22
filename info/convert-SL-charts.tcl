@@ -27,8 +27,8 @@ source long-parse-lib.tcl
 # set slfilenam [gets stdin]
 # set working_dir [pwd]
 
-if [catch {open [file join $qal_common_dir qal_template_columns.dat] w} chart_fid] {
-    puts stderr "Cannot open qal_template_columns: $chart_fid for write."
+if [catch {open [file join $qal_common_dir qal_template_accounts.dat] w} chart_fid] {
+    puts stderr "Cannot open qal_template_accounts: $chart_fid for write."
 } else {
     # open output file to add chart specific data to accounts-ledger/sql/common for importing
     puts $errorInfo
