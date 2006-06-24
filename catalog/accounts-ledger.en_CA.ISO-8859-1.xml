@@ -41,7 +41,7 @@
 <msg key="en_CA_4400">OTHER REVENUE</msg>
 <msg key="en_CA_4430">Shipping &amp; Handling</msg>
 <msg key="en_CA_4440">Interest</msg>
-<msg key="en_CA_4450">Foreign Exchange Gain</msg>
+<msg key="en_CA_4450">Foreign Exchange Gain / (Loss)</msg>
 <msg key="en_CA_5000">COST OF GOODS SOLD</msg>
 <msg key="en_CA_5010">Purchases</msg>
 <msg key="en_CA_5050">Aftermarket Parts</msg>
@@ -66,5 +66,4 @@
 <msg key="en_CA_5785">Travel &amp; Entertainment</msg>
 <msg key="en_CA_5790">Utilities</msg>
 <msg key="en_CA_5800">Licenses</msg>
-<msg key="en_CA_5810">Foreign Exchange Loss</msg>
 </message_catalog>

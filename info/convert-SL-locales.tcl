@@ -40,7 +40,8 @@ foreach slfilenampath $sl_file_list {
       }
 
       set locale $dirmap($slfilenam)
-      set newFile [file join $qal_cat_dir "accounts-ledger.$locale.$charset.xml"]
+
+      set newFile [file join $qal_cat_dir "accounts-ledger.${locale}.$charset.xml"]
  
       if [catch {open $newFile w} newId] {
           puts stderr "Cannot open $newFile: $newId for write."
@@ -49,7 +50,7 @@ foreach slfilenampath $sl_file_list {
           #
 #          puts stdout "w"
           puts $newId "<?xml version=\"1.0\" encoding=\"$charset\"?>
-<message_catalog package_key=\"accounts-ledger\" package_version=\"0.1d\" locale=\"$locale\" charset=\"$charset\">
+<message_catalog package_key=\"accounts-ledger\" package_version=\"0.1d\" locale=\"${locale}\" charset=\"$charset\">
 
 "
 

@@ -1,11 +1,11 @@
 # set the location of the accounts-ledger/catalog directory
 # and the sql-ledger locale directory
 # use full pathname
-set qal_dir "/var/lib/aolserver/openacs-4/packages/accounts-ledger"
+set qal_dir "/Users/head/openacs-4/packages/accounts-ledger"
 set qal_cat_dir [file join $qal_dir catalog]
 set qal_common_dir [file join $qal_dir sql common]
 
-set sl_base_dir "/var/lib/aolserver/sql-ledger-2.6.2"
+set sl_base_dir "/usr/local/src/sql-ledger"
 set sl_loc_dir [file join $sl_base_dir locale]
 set sl_chart_dir [file join $sl_base_dir sql]
 
@@ -15,10 +15,14 @@ set dirmap(be_nl) "nl_BE"
 set dirmap(br) "pt_BR" 
 set dirmap(ca_en) "en_CA" 
 set dirmap(ca_fr) "fr_CA" 
+set dirmap(ch) "de_CH"
+# not used: set dirmap(ch_utf) "de_CH"
 set dirmap(cn_utf) "zh_HK" 
 # not used: set dirmap(co) "" 
 set dirmap(co_utf) "es_CO" 
-set dirmap(ct) "ct_ES" 
+set dirmap(ct) "ca_ES" 
+# was ct_ES.. but ca is Catalan not ct
+
 set dirmap(cz) "cz_CZ" 
 # not used: set dirmap(de) "de_DE" 
 set dirmap(de_utf) "de_DE" 
@@ -34,6 +38,8 @@ set dirmap(fr) "fr_FR"
 set dirmap(gr) "el_GR" 
 set dirmap(hu) "hu_HU" 
 set dirmap(id) "in_ID" 
+# in_ID is actually ind_ID in OpenACS.. need to make adjustments to output..
+
 set dirmap(is) "is_IS" 
 set dirmap(it) "it_IT" 
 set dirmap(lt) "lt_LT" 

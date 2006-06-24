@@ -37,7 +37,7 @@ puts "slfilenam: '$slfilenam', slfilepathnam: '$slfilepathnam'"
 
       set file_exists [lsearch $oacs_xml_file_list "*${locale}*"]
       if { $file_exists == -1 } {
-          set newFile [file join $qal_cat_dir "accounts-ledger.$locale.$charset.xml"]
+          set newFile [file join $qal_cat_dir "accounts-ledger.${locale}.$charset.xml"]
           set write_type "w"
       } else {
           set write_type "a"
@@ -56,7 +56,7 @@ puts "slfilenam: '$slfilenam', slfilepathnam: '$slfilepathnam'"
 #          puts stdout "w"
           if { $file_exists == -1 } {
               puts $newId "<?xml version=\"1.0\" encoding=\"$charset\"?>
-<message_catalog package_key=\"accounts-ledger\" package_version=\"0.1d\" locale=\"$locale\" charset=\"$charset\">
+<message_catalog package_key=\"accounts-ledger\" package_version=\"0.1d\" locale=\"${locale}\" charset=\"$charset\">
 
 "
           }

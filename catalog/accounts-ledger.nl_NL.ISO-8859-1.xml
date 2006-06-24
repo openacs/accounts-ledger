@@ -31,6 +31,7 @@
 <msg key="Accounts">Rekeningen</msg>
 <msg key="Accrual">Transactie</msg>
 <msg key="Acquisition_Date">Acquisitiedatum</msg>
+<msg key="Activate_Audit_trail">Activeer Transactielogboek</msg>
 <msg key="Activate_Audit_trails">Activeer Transactielogboek</msg>
 <msg key="Active">Actief</msg>
 <msg key="Add">Toevoegen</msg>
@@ -64,6 +65,7 @@
 <msg key="Add_Sales_Invoice">Verkoopfactuur Toevoegen</msg>
 <msg key="Add_Sales_Order">Verkooporder Toevoegen</msg>
 <msg key="Add_Service">Dienst Toevoegen</msg>
+<msg key="Add_Stores_Card">Materiaalkaart Toevoegen</msg>
 <msg key="Add_Time_Card">Tijdkaart Toevoegen</msg>
 <msg key="Add_Transaction">Boeking Toevoegen</msg>
 <msg key="Add_User">Gebruiker Toevoegen</msg>
@@ -75,6 +77,8 @@
 <msg key="Administrator">Beheerder</msg>
 <msg key="After_Deduction">Na Korting</msg>
 <msg key="After_Depreciation">Na Afschrijving</msg>
+<msg key="Aged">Ouderdom</msg>
+<msg key="Aged_Overdue">Achterstallig</msg>
 <msg key="All">Allemaal</msg>
 <msg key="All_Accounts">Alle Rekeningen</msg>
 <msg key="All_Datasets_up_to_date_">Alle Datasets Actueel</msg>
@@ -105,6 +109,8 @@
 <msg key="Assets">Activa</msg>
 <msg key="Attachment">Bijlage</msg>
 <msg key="Audit_Control">Transactielogboek</msg>
+<msg key="Audit_trail_disabled">Transactielogboek Niet Geactiveerd</msg>
+<msg key="Audit_trail_enabled">Transactielogboek Geactiveerd</msg>
 <msg key="Audit_trail_removed_up_to">Transactielogboek Verwijderd Tot</msg>
 <msg key="Audit_trails_disabled">Transactielogboek Niet Geactiveerd</msg>
 <msg key="Audit_trails_enabled">Transactielogboek Geactiveerd</msg>
@@ -119,6 +125,7 @@
 <msg key="Balance">Saldo</msg>
 <msg key="Balance_Sheet">Balans</msg>
 <msg key="Based_on">Gebaseerd op</msg>
+<msg key="Batch_Printing">Gegroepeerd Afdrukken</msg>
 <msg key="Bcc">Bcc</msg>
 <msg key="Before_Deduction">Voor Korting</msg>
 <msg key="Before_Depreciation">Voor Afschrijving</msg>
@@ -129,7 +136,7 @@
 <msg key="Bin_List">Vergaarlijst</msg>
 <msg key="Bin_Lists">Vergaarlijsten</msg>
 <msg key="Books_are_open">Boekingsperiode is open</msg>
-<msg key="Break">Korting</msg>
+<msg key="Break">Staffel</msg>
 <msg key="Business">Branche</msg>
 <msg key="Business_Number">KvK-nummer</msg>
 <msg key="Business_deleted_">Branche verwijderd!</msg>
@@ -137,14 +144,16 @@
 <msg key="C">C</msg>
 <msg key="COGS">Kostprijs omzet</msg>
 <msg key="COGS_account_does_not_exist_">Kostprijs Omzet rekening bestaat niet!</msg>
+<msg key="Cannot_add_stores_card_for_a_completed_job_">Kan geen materiaalkaart toevoegen aan een afgewerkte job!</msg>
 <msg key="Cannot_add_time_card_for_a_completed_job_">Kan geen tijdkaart toevoegen aan een afgewerkte job!</msg>
+<msg key="Cannot_change_stores_card_for_a_completed_job_">Kan materiaalkaart niet veranderen voor een afgewerkte job!</msg>
 <msg key="Cannot_change_time_card_for_a_completed_job_">Kan tijdkaart niet veranderen voor een afgewerkte job!</msg>
 <msg key="Cannot_create_Assembly">Kan Assemblage niet aanmaken</msg>
 <msg key="Cannot_create_Labor">Kan Arbeid niet aanmaken</msg>
 <msg key="Cannot_create_Lock_">Kan geen exclusieve toegang krijgen!</msg>
 <msg key="Cannot_create_Part">Kan Artikel niet aanmaken</msg>
 <msg key="Cannot_create_Service">Kan Dienst niet aanmaken</msg>
-<msg key="Cannot_delete_account_">Kan bedrag niet verwijderen!</msg>
+<msg key="Cannot_delete_account_">Kan rekening niet verwijderen!</msg>
 <msg key="Cannot_delete_customer_">Kan klant niet verwijderen!</msg>
 <msg key="Cannot_delete_default_account_">Kan standaardrekening niet verwijderen!</msg>
 <msg key="Cannot_delete_invoice_">Kan factuur niet verwijderen!</msg>
@@ -168,6 +177,8 @@
 <msg key="Cannot_save_order_">Kan order niet opslaan!</msg>
 <msg key="Cannot_save_preferences_">Kan voorkeuren niet opslaan!</msg>
 <msg key="Cannot_save_quotation_">Kan offerte niet opslaan!</msg>
+<msg key="Cannot_save_stores_card_for_a_closed_period_">Kan materiaalkaart niet opslaan in een afgesloten periode!</msg>
+<msg key="Cannot_save_stores_card_">Kan materiaalkaart niet opslaan!</msg>
 <msg key="Cannot_save_time_card_for_a_closed_period_">Kan tijdkaart niet opslaan in een afgesloten periode!</msg>
 <msg key="Cannot_save_time_card_">Kan tijdkaart niet opslaan!</msg>
 <msg key="Cannot_set_account_for_more_than_one_of_AR__AP_or_IC">Kan rekening niet toekennen behalve aan ofwel Debiteuren, Crediteuren of Inventaris</msg>
@@ -202,6 +213,10 @@
 <msg key="Confirm">Bevestig</msg>
 <msg key="Confirm_">Bevestig!</msg>
 <msg key="Connect_to">Verbinden met</msg>
+<msg key="Consolidate">Consolideren</msg>
+<msg key="Consolidate_Orders">Samenvoegen Orders</msg>
+<msg key="Consolidate_Purchase_Orders">Samenvoegen Inkooporders</msg>
+<msg key="Consolidate_Sales_Orders">Samenvoegen Verkooporders</msg>
 <msg key="Contact">Contact</msg>
 <msg key="Continue">Verder</msg>
 <msg key="Contra">Contra</msg>
@@ -216,6 +231,7 @@
 <msg key="Create_Chart_of_Accounts">Maak Rekeningstelsel</msg>
 <msg key="Create_Dataset">Maak Dataset</msg>
 <msg key="Credit">Credit</msg>
+<msg key="Credit_Invoice">Creditfactuur</msg>
 <msg key="Credit_Limit">Kredietlimiet</msg>
 <msg key="Curr">Val.</msg>
 <msg key="Currency">Valuta</msg>
@@ -231,7 +247,7 @@
 <msg key="Customers">Klanten</msg>
 <msg key="DBA">DBA</msg>
 <msg key="DBI_not_installed_">DBI niet geinstalleerd</msg>
-<msg key="DOB">Geboortedatum</msg>
+<msg key="DOB">Geb. datum</msg>
 <msg key="Database">Database</msg>
 <msg key="Database_Administration">Database administratie</msg>
 <msg key="Database_Driver_not_checked_">Stuurprogramma niet aangevinkt</msg>
@@ -252,6 +268,7 @@
 <msg key="Day_s">Dag(en)</msg>
 <msg key="Days">Dagen</msg>
 <msg key="Debit">Debet</msg>
+<msg key="Debit_Invoice">Debitfactuur</msg>
 <msg key="Dec">dec</msg>
 <msg key="December">december</msg>
 <msg key="Decimalplaces">Decimalen</msg>
@@ -357,7 +374,7 @@
 <msg key="Expense">Onkosten</msg>
 <msg key="Expense_account_does_not_exist_">Uitgavenrekening bestaat niet!</msg>
 <msg key="Expense_Asset">Uitgaven/Activa</msg>
-<msg key="Extended">Uitgebreid</msg>
+<msg key="Extended">Totaal</msg>
 <msg key="FX">FX</msg>
 <msg key="Failed_to_save_order_">Order opslaan mislukt!</msg>
 <msg key="Fax">Fax</msg>
@@ -429,6 +446,7 @@
 <msg key="Invoice_deleted_">Factuur verwijderd!</msg>
 <msg key="Invoices">Facturen</msg>
 <msg key="Is_this_a_summary_account_to_record">Totaalrekening voor</msg>
+<msg key="Item">Regel</msg>
 <msg key="Item_already_on_pricelist_">Onderdeel al aanwezig op prijslijst!</msg>
 <msg key="Item_deleted_">Onderdeel verwijderd!</msg>
 <msg key="Item_not_on_file_">Dit onderdeel is niet in de database gevonden!</msg>
@@ -442,6 +460,7 @@
 <msg key="Job_Number_missing_">Jobcode ontbreekt!</msg>
 <msg key="Job_deleted_">Job verwijderd!</msg>
 <msg key="Job_saved_">Job opgeslagen!</msg>
+<msg key="Job_Project_Number">Job-/Projectcode</msg>
 <msg key="Jobs">Jobs</msg>
 <msg key="Jul">jul</msg>
 <msg key="July">juli</msg>
@@ -458,6 +477,7 @@
 <msg key="Languages_not_defined_">Talen niet gedefinieerd!</msg>
 <msg key="Last_Cost">Laaste Kostprijs</msg>
 <msg key="Last_Numbers___Default_Accounts">Laatst Toegekende Codes &amp; Standaardrekeningen</msg>
+<msg key="Lead">Doorloop</msg>
 <msg key="Leadtime">Levertijd</msg>
 <msg key="Leave_host_and_port_field_empty_unless_you_want_to_make_a_remote_connection">Laat computernaam en poortnummer leeg, tenzij u een netwerkverbinding wilt opzetten.</msg>
 <msg key="Liability">Passiva</msg>
@@ -515,8 +535,10 @@
 <msg key="No_Database_Drivers_available_">Geen Stuurprogramma voor Database beschikbaar!</msg>
 <msg key="No_Dataset_selected_">Geen Dataset geselecteerd</msg>
 <msg key="No_Employees_on_file_">Geen Werknemers bekend!</msg>
+<msg key="No_History_">Geen geschiedenis!</msg>
 <msg key="No_Labor_codes_on_file_">Geen Werkcodes bekend!</msg>
 <msg key="No_Parts_on_file_">Geen Onderdelen bekend!</msg>
+<msg key="No_Services_on_file_">Geen diensten bekend!</msg>
 <msg key="No_email_address_for">Geen e-mailadres voor</msg>
 <msg key="No_open_Jobs_">Geen open Jobs!</msg>
 <msg key="No_open_Projects_">Geen open Projecten!</msg>
@@ -525,8 +547,10 @@
 <msg key="Non_taxable">Onbelast</msg>
 <msg key="Non_taxable_Purchases">Onbelaste Aankopen</msg>
 <msg key="Non_taxable_Sales">Onbelaste Verkopen</msg>
+<msg key="Non_tracking_Items">Inventarisgoederen</msg>
 <msg key="Notes">Opmerkingen</msg>
 <msg key="Nothing_entered_">Niets ingevuld!</msg>
+<msg key="Nothing_open_">Niets open!</msg>
 <msg key="Nothing_selected_">Niets geselecteerd!</msg>
 <msg key="Nothing_to_delete_">Niets te verwijderen!</msg>
 <msg key="Nothing_to_print_">Niets af te drukken!</msg>
@@ -542,6 +566,7 @@
 <msg key="Oct">okt</msg>
 <msg key="October">oktober</msg>
 <msg key="On_Hand">Op voorraad</msg>
+<msg key="Onhand">Beschikbaar</msg>
 <msg key="Open">Open</msg>
 <msg key="Oracle_Database_Administration">Oracle Database Administratie</msg>
 <msg key="Order">Bestelling</msg>
@@ -558,7 +583,9 @@
 <msg key="Out_of_balance_transaction_">Boeking is niet in evenwicht!</msg>
 <msg key="Out_of_balance_">Niet in evenwicht!</msg>
 <msg key="Outstanding">Openstaand</msg>
+<msg key="Overdue">Achterstallig</msg>
 <msg key="PDF">PDF</msg>
+<msg key="PO">PO</msg>
 <msg key="PO_Number">PO code</msg>
 <msg key="POS">Kassa</msg>
 <msg key="POS_Invoice">Kassabon</msg>
@@ -571,6 +598,7 @@
 <msg key="Part_Number">Artikelcode</msg>
 <msg key="Partnumber">Artikelcode</msg>
 <msg key="Parts">Artikelen</msg>
+<msg key="Parts_Requirements">Benodigde Onderdelen</msg>
 <msg key="Password">Wachtwoord</msg>
 <msg key="Password_changed_">Wachtwoord gewijzigd!</msg>
 <msg key="Password_does_not_match_">Wachtwoord komt niet overeen!</msg>
@@ -638,6 +666,8 @@
 <msg key="Qty">Aantal</msg>
 <msg key="Quantity_exceeds_available_units_to_stock_">Aantal is hoger dan de aanwezige voorraad!</msg>
 <msg key="Quarter">Kwartaal</msg>
+<msg key="Queue">Wachtrij</msg>
+<msg key="Queued">In Wachtrij Gezet</msg>
 <msg key="Quotation">Offerte</msg>
 <msg key="Quotation_">Offerte </msg>
 <msg key="Quotation_Date">Offertedatum</msg>
@@ -669,6 +699,7 @@
 <msg key="Reference">Referentie</msg>
 <msg key="Remaining">Resterend</msg>
 <msg key="Remove">Verwijder</msg>
+<msg key="Remove_Audit_trail_up_to">Verwijder Transactielogboek tot</msg>
 <msg key="Remove_Audit_trails_up_to">Verwijder Transactielogboek tot</msg>
 <msg key="Removed_spoolfiles_">Spoolfiles verwijderd!</msg>
 <msg key="Removing_marked_entries_from_queue">Verwijderen gemarkeerde stukken uit wachtrij ...</msg>
@@ -679,6 +710,7 @@
 <msg key="Request_for_Quotation">Prijsaanvraag</msg>
 <msg key="Request_for_Quotations">Prijsaanvragen</msg>
 <msg key="Required_by">Nodig voor</msg>
+<msg key="Requirements">Vereisten</msg>
 <msg key="Retained_Earnings">Winstreserve</msg>
 <msg key="Role">Rol</msg>
 <msg key="S">S</msg>
@@ -686,6 +718,7 @@
 <msg key="SIC_deleted_">SIC verwijderd!</msg>
 <msg key="SIC_saved_">SIC opgeslagen!</msg>
 <msg key="SKU">SKU</msg>
+<msg key="SO">VO</msg>
 <msg key="SSN">Pers.nr.</msg>
 <msg key="Sale">Verkoopfactuur</msg>
 <msg key="Sales">Verkoop</msg>
@@ -765,6 +798,9 @@
 <msg key="Stock">Voorraad</msg>
 <msg key="Stock_Assembly">Assemblagevoorraad</msg>
 <msg key="Stock_Finished_Goods">Inslaan Afgewerkte Goederen</msg>
+<msg key="Stores_Card">Materiaalkaart</msg>
+<msg key="Stores_Card_saved_">Materiaalkaart opgeslagen!</msg>
+<msg key="Stores_Cards">Materiaalkaarten</msg>
 <msg key="Stylesheet">Stylesheet</msg>
 <msg key="Sub_contract_GIFI">GIFI rubricering</msg>
 <msg key="Subject">Onderwerp</msg>
@@ -793,6 +829,7 @@
 <msg key="This_is_a_preliminary_check_for_existing_sources__Nothing_will_be_created_or_deleted_at_this_stage_">Dit is een eerste controle. Er wordt op dit moment niks bijgewerkt of verwijderd.</msg>
 <msg key="Thursday">donderdag</msg>
 <msg key="Till">Kassa</msg>
+<msg key="Time">Tijd</msg>
 <msg key="Time_Card">Tijdkaart</msg>
 <msg key="Time_Card_deleted_">Tijdkaart verwijderd!</msg>
 <msg key="Time_Card_saved_">Tijdkaart opgeslagen!</msg>
@@ -805,6 +842,7 @@
 <msg key="To_add_a_user_to_a_group_edit_a_name__change_the_login_name_and_save___A_new_user_with_the_same_variables_will_then_be_saved_under_the_new_login_name">Om een gebruiker aan een groep toe te voegen, een naam te wijzigen, een gebruikersnaam te wijzigen en op te slaan. Een nieuwe gebruiker zal dan worder opgeslagen met dezelfde gegevens onder de nieuwe gebruikersnaam.</msg>
 <msg key="Top_Level">Hoogste Niveau</msg>
 <msg key="Total">Totaal</msg>
+<msg key="Tracking_Items">Niet-inventarisgoederen</msg>
 <msg key="Trade_Discount">Handelskorting</msg>
 <msg key="Transaction">Boeking</msg>
 <msg key="Transaction_Date_missing_">Boekingsdatum ontbreekt!</msg>
@@ -827,6 +865,7 @@
 <msg key="Tuesday">dinsdag</msg>
 <msg key="Type_of_Business">Branche</msg>
 <msg key="Unit">Eenheid</msg>
+<msg key="Unit_Rate">Eenheidsprijs</msg>
 <msg key="Unit_of_measure">Rekeneenheid</msg>
 <msg key="Unlock_System">System Ontgrendelen</msg>
 <msg key="Update">Bijwerken</msg>

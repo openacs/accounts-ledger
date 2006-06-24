@@ -28,6 +28,7 @@
 <msg key="Accounting_Menu">Menú de contabilidad</msg>
 <msg key="Accounts">Cuentas</msg>
 <msg key="Accrual">Acumulado</msg>
+<msg key="Activate_Audit_trail">Activar pistas de auditoría</msg>
 <msg key="Activate_Audit_trails">Activar pistas de auditoría</msg>
 <msg key="Active">Activa</msg>
 <msg key="Add">Crear</msg>
@@ -88,6 +89,8 @@
 <msg key="Asset">Activo</msg>
 <msg key="Attachment">Anexo</msg>
 <msg key="Audit_Control">Control de auditoría</msg>
+<msg key="Audit_trail_disabled">Pistas de auditoría desactivadas</msg>
+<msg key="Audit_trail_enabled">Pistas de auditoría activadas</msg>
 <msg key="Audit_trail_removed_up_to">Pistas de auditoría eliminadas hasta</msg>
 <msg key="Audit_trails_disabled">Pistas de auditoría desactivadas</msg>
 <msg key="Audit_trails_enabled">Pistas de auditoría activadas</msg>
@@ -552,6 +555,7 @@
 <msg key="Reference">Referencia</msg>
 <msg key="Remaining">Disponible</msg>
 <msg key="Remove">Eliminar</msg>
+<msg key="Remove_Audit_trail_up_to">Eliminar pistas de auditoría hasta</msg>
 <msg key="Remove_Audit_trails_up_to">Eliminar pistas de auditoría hasta</msg>
 <msg key="Removed_spoolfiles_">¡Archivos de fila eliminados!</msg>
 <msg key="Removing_marked_entries_from_queue">Eliminado entradas seleccionadas de la fila ...</msg>

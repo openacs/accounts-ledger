@@ -2,11 +2,6 @@
 CREATE SEQUENCE qal_id start 10000;
 SELECT nextval ('qal_id');
 --
-CREATE TABLE qal_makemodel (
-  parts_id integer,
-  make text,
-  model text
-);
 
 -- gets imported into qal_chart
 -- Each account represents two traditional accounting columns:

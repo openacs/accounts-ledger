@@ -16,3 +16,7 @@ foreach xmlfilenam ${oacs_xml_file_list} {
         close $xmlID
     }
 }
+
+file rename [file join $qal_cat_dir accounts-ledger.in_ID.ISO-8859-1.xml] [file join $qal_cat_dir accounts-ledger.ind_ID.ISO-8859-1.xml]
+
+puts "Note: remember to  edit 'accounts-ledger/catalog/accounts-ledger.ind_ID.ISO-8859-1.xml' to change locale from in_ID to ind_ID."
