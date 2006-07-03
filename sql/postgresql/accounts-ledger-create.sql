@@ -1,7 +1,14 @@
+-- accounts-ledger-create.sql
 --
+-- @author Dekka Corp.
+-- @ported from sql-ledger and combined with parts from OpenACS ecommerce package
+-- @license GNU GENERAL PUBLIC LICENSE, Version 2, June 1991
+-- @cvs-id
+--
+
 CREATE SEQUENCE qal_id start 10000;
 SELECT nextval ('qal_id');
---
+
 
 -- gets imported into qal_chart
 -- Each account represents two traditional accounting columns:
@@ -62,9 +69,9 @@ CREATE TABLE qal_chart (
 );
 
 --
--- some of this table of defaults should be moved into package parameters
+-- the package related defaults should be moved from this table into package parameters
 -- some are related to user and so should stay in a user_preferences table
--- ask SL which are user specific, which are GL specific
+-- 
 CREATE TABLE qal_defaults (
   inventory_accno_id integer,
   income_accno_id integer,
@@ -274,3 +281,94 @@ CREATE TRIGGER qal_check_department AFTER INSERT OR UPDATE ON qal_gl FOR EACH RO
 --
 --
 
+
+-- qal_del_exchangerate has dependencies on AR and AP, 
+-- but AR and AP have triggers that depend on it, so hopefully
+-- it works from here, otherwise we might need to split this up
+CREATE FUNCTION qal_del_exchangerate() RETURNS OPAQUE AS '
+
+declare
+  t_transdate date;
+  t_curr char(3);
+  t_id int;
+  d_curr text;
+
+begin
+
+  select into d_curr substr(curr,1,3) from qal_defaults;
+  
+  if TG_RELNAME = ''ar'' then
+    select into t_curr, t_transdate curr, transdate from qar_ar where id = old.id;
+  end if;
+  if TG_RELNAME = ''ap'' then
+    select into t_curr, t_transdate curr, transdate from qap_ap where id = old.id;
+  end if;
+  if TG_RELNAME = ''oe'' then
+    select into t_curr, t_transdate curr, transdate from qar_oe where id = old.id;
+  end if;
+
+  if d_curr != t_curr then
+
+    select into t_id a.id from qal_acc_trans ac
+    join qar_ar a on (a.id = ac.trans_id)
+    where a.curr = t_curr
+    and ac.transdate = t_transdate
+
+    except select a.id from qar_ar a where a.id = old.id
+    
+    union
+    
+    select a.id from qal_acc_trans ac
+    join qap_ap a on (a.id = ac.trans_id)
+    where a.curr = t_curr
+    and ac.transdate = t_transdate
+    
+    except select a.id from qap_ap a where a.id = old.id
+    
+    union
+    
+    select o.id from qar_oe o
+    where o.curr = t_curr
+    and o.transdate = t_transdate
+    
+    except select o.id from qar_oe o where o.id = old.id;
+
+    if not found then
+      delete from qal_exchangerate where curr = t_curr and transdate = t_transdate;
+    end if;
+  end if;
+return old;
+
+end;
+' language 'plpgsql';
+-- end function
+--
+
+
+   create sequence qal_ec_user_session_seq;
+   create view qal_ec_user_session_sequence as select nextval('qal_ec_user_session_seq') as nextval;
+   
+   create table qal_ec_user_sessions (
+           user_session_id         integer not null constraint qal_ec_session_id_pk primary key,
+           -- often will not be known
+           user_id                 integer references users,
+           ip_address              varchar(20) not null,
+           start_time              timestamptz,
+           http_user_agent         varchar(4000)
+   );
+   
+   create index qal_ec_user_sessions_idx on qal_ec_user_sessions(user_id);
+   
+   create table qal_ec_user_session_info (
+           user_session_id         integer not null references qal_ec_user_sessions,
+           product_id              integer references qci_ec_products,
+--     used to reference ec_categories, now needs to reference categories package..
+--           category_id             integer references qci_ec_categories,
+           category_id             integer,
+           search_text             varchar(200)
+   );
+   
+   create index qal_ec_user_session_info_idx  on qal_ec_user_session_info (user_session_id);
+   create index qal_ec_user_session_info_idx2 on qal_ec_user_session_info (product_id);
+   create index qal_ec_user_session_info_idx3 on qal_ec_user_session_info (category_id);
+   
