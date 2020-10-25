@@ -229,7 +229,7 @@
 -- );
 -- 
 -- create function ec_user_classes_audit_tr ()
--- returns opaque as '
+-- returns trigger as '
 -- begin
 --         insert into ec_user_classes_audit (
 --         user_class_id, user_class_name,
@@ -273,7 +273,7 @@ create table qar_ec_product_u_c_prices_audit (
 );
 
 create function qar_ec_product_u_c_prices_audit_tr ()
-returns opaque as '
+returns trigger as '
 begin
         insert into qar_ec_product_u_c_prices_audit (
         product_id, user_class_id,
@@ -324,7 +324,7 @@ for each row execute procedure qar_ec_product_u_c_prices_audit_tr ();
 -- 
 -- 
 -- create function ec_user_class_user_audit_tr ()
--- returns opaque as '
+-- returns trigger as '
 -- begin
 --         insert into ec_user_class_user_map_audit (
 --         user_id, user_class_id, user_class_approved_p,
@@ -418,7 +418,7 @@ for each row execute procedure qar_ec_product_u_c_prices_audit_tr ();
 -- 
 -- -- Jerry - I removed usps_abbrev and/or state here
 -- create function ec_retailers_audit_tr ()
--- returns opaque as '
+-- returns trigger as '
 -- begin
 --         insert into ec_retailers_audit (
 --         retailer_id, retailer_name,
@@ -524,7 +524,7 @@ for each row execute procedure qar_ec_product_u_c_prices_audit_tr ();
 -- 
 -- -- Jerry - I removed usps_abbrev and/or state here
 -- create function ec_retailer_locations_audit_tr ()
--- returns opaque as '
+-- returns trigger as '
 -- begin
 --         insert into ec_retailer_locations_audit (
 --         retailer_location_id, retailer_id, location_name,
